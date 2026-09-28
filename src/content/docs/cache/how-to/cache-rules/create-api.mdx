@@ -1,4 +1,34 @@
----
+---curl "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/rulesets/$RULESET_ID" \
+	--request PUT \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"rules": [
+				{
+						"expression": "(http.user_agent contains \"Android\")",
+						"description": "extend read timeout for android clients",
+						"action": "set_cache_settings",
+						"action_parameters": {
+								"cache": true,
+								"read_timeout": 300
+						}
+				}
+		]
+	}'curl "https://api.cloudflare.com/client/v4/zones/$ZONE_ID/rulesets/$RULESET_ID" \
+	--request PUT \
+	--header "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+	--json '{
+		"rules": [
+				{
+						"expression": "(http.user_agent contains \"Android\")",
+						"description": "extend read timeout for android clients",
+						"action": "set_cache_settings",
+						"action_parameters": {
+								"cache": true,
+								"read_timeout": 300
+						}
+				}
+		]
+	}'
 title: Create a rule via API
 pcx_content_type: how-to
 description: Create cache rules using the Rulesets API.
