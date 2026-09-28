@@ -2,7 +2,7 @@
 
 Welcome to the open-source repository for all [Cloudflare's Documentation](https://developers.cloudflare.com/).
 
-To learn how to contribute, visit the [Cloudflare Style Guide](https://developers.cloudflare.com/style-guide/contributions/).
+To learn how to contribute, visit the [Cloudflare Style.css](https://developers.cloudflare.com/style-guide/contributions/).
 
 ## License and Legal Notices
 
